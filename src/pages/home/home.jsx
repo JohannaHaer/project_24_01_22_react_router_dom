@@ -1,13 +1,18 @@
 
 import { Link } from "react-router-dom";
 import Nav from "../../components/nav/Nav";
+import "./home.css";
 
 const Home = () => {
     return (
         <>
-        <Nav/>
-        <h1>Welcome to my simple Blog</h1>
-        <Link to='/blog'>Go to Article</Link>
+        <header>
+            <Nav/>
+        </header>
+        <main>
+            <h1>Welcome to my simple Blog</h1>
+            <Link to='/blog'>Go to Article</Link>
+        </main>
         </>
     );
 }
